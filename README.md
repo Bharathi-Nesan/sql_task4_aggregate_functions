@@ -4,10 +4,10 @@ This repository contains SQL scripts focused **aggregate functions**, helping be
 
 ##  Contents
 
- -`create_tables.sql`  - SQL statements to create the `sales`, `customers`, and `orders` tables 
- -`insert_data.sql`    - Sample data to populate the above tables             
- -`aggregate_queries.sql` - 20+ queries using aggregate functions with `GROUP BY` and `HAVING` 
- -`README.md`          - This documentation file                              
+ - `create_tables.sql`  - SQL statements to create the `sales`, `customers`, and `orders` tables 
+ - `insert_data.sql`    - Sample data to populate the above tables             
+ - `aggregate_queries.sql` - 20+ queries using aggregate functions with `GROUP BY` and `HAVING` 
+ - `README.md`          - This documentation file                              
 
 ---
 
