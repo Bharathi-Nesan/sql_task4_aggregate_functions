@@ -1,32 +1,70 @@
-# SQL Aggregate Functions & Grouping
+# SQL Practice: Aggregate Functions Only
 
-This repository contains SQL scripts to practice and demonstrate the use of aggregate functions, grouping, and filtering using `GROUP BY` and `HAVING` clauses.
+This repository contains SQL scripts focused **aggregate functions**, helping beginners and students practice data summarization using functions like `SUM`, `COUNT`, `AVG`, `MIN`, and `MAX`. These queries are essential for analyzing tabular data effectively.
 
-##  Files
+##  Contents
 
-- `create_table.sql` – SQL to create the `sales` table.
-- `insert_data.sql` – Sample data insertion.
-- `aggregate_queries.sql` – Example queries using `SUM`, `COUNT`, `AVG`, `GROUP BY`, `HAVING`, and more.
+ -`create_tables.sql`  - SQL statements to create the `sales`, `customers`, and `orders` tables 
+ -`insert_data.sql`    - Sample data to populate the above tables             
+ -`aggregate_queries.sql` - 20+ queries using aggregate functions with `GROUP BY` and `HAVING` 
+ -`README.md`          - This documentation file                              
 
-##  Sample Table: sales
+---
 
-| Column   | Type    Description                |
+##  Tables Overview
+
+### 1. `sales`
+
+Stores product information and quantity in stock.
+
+| Column   | Type    | Description                |
 |----------|---------|----------------------------|
 | id       | INTEGER | Primary Key                |
 | product  | TEXT    | Product name               |
 | category | TEXT    | Product category           |
-| quantity | INTEGER | Quantity sold              |
+| quantity | INTEGER | Quantity in stock          |
 | price    | REAL    | Price per unit             |
 
-##  Example Queries
+---
 
-- Total revenue per product  
-- Average price per category  
-- Count of products per category  
-- Filter groups using `HAVING`  
-- Sorting and subqueries  
+### 2. `customers`
 
-##  Tools Used
+Stores customer details.
 
-- MySQL Workbench
+| Column | Type    | Description          |
+|--------|---------|----------------------|
+| id     | INTEGER | Primary Key          |
+| name   | TEXT    | Customer's name      |
+| city   | TEXT    | City of residence    |
+
+---
+
+### 3. `orders`
+
+Tracks customer orders and the quantity of each product ordered.
+
+| Column      | Type    | Description                      |
+|-------------|---------|----------------------------------|
+| id          | INTEGER | Primary Key                      |
+| customer_id | INTEGER | Foreign Key referencing customers(id) |
+| product     | TEXT    | Product name                     |
+| quantity    | INTEGER | Quantity ordered                 |
+| order_date  | DATE    | Date of the order                |
+
+---
+
+##  Topics Practiced
+
+- `SUM()`, `COUNT()`, `AVG()`, `MIN()`, `MAX()`
+- `GROUP BY`
+- `HAVING`
+- Summary statistics from multiple tables
+
+---
+
+
+
+
+
+
 
